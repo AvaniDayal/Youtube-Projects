@@ -22,3 +22,22 @@ res = requests.get(url)
 
 #display the result!
 print(res.text)
+
+# improved code 
+import requests
+def get_weather(city):
+  '''fetches weather report for a given city.
+Args:
+ city(str):City Name
+Returns:
+str:Weather report'''
+url=f'(link unavailable)
+response=requests.get(url)
+return response.text
+def main():
+  city=str(input("Enter city name:"))
+  print(f'Displaying weather report for:{city}')
+  weather_report=get_weather(city)
+  print(weather_report)
+  if_name=='_main.__':
+    main()
