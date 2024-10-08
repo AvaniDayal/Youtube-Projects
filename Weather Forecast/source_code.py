@@ -31,13 +31,10 @@ Args:
  city(str):City Name
 Returns:
 str:Weather report'''
-url=f'(link unavailable)
-response=requests.get(url)
-return response.text
 def main():
   city=str(input("Enter city name:"))
   print(f'Displaying weather report for:{city}')
   weather_report=get_weather(city)
   print(weather_report)
-  if_name=='_main.__':
+if_name_=='__main.__':
     main()
