@@ -31,6 +31,9 @@ Args:
  city(str):City Name
 Returns:
 str:Weather report'''
+  url = 'https://wttr.in/{}'.format(city)
+res = requests.get(url)
+  print(res.text)
 def main():
   city=str(input("Enter city name:"))
   print(f'Displaying weather report for:{city}')
